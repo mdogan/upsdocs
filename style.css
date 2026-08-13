@@ -361,3 +361,62 @@ html[data-current-path="/introduction"] #content-area {
   color: #98a2b3;
   border-top-color: rgba(255, 255, 255, 0.08);
 }
+
+/* ---- Command search (redis/commands/overview) ---- */
+.u-cmd-search__input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.dark .u-cmd-search__input {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.03);
+}
+.u-cmd-search__input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+.u-cmd-search__results {
+  margin-top: 1rem;
+}
+.u-cmd-search__meta,
+.u-cmd-search__empty {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  color: #626d7a;
+}
+.dark .u-cmd-search__meta,
+.dark .u-cmd-search__empty {
+  color: #98a2b3;
+}
+.u-cmd-tag {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #059669;
+  background: rgba(16, 185, 129, 0.1);
+  vertical-align: middle;
+}
+.dark .u-cmd-tag {
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.12);
+}
+.u-cmd-search__divider {
+  margin: 2rem 0 0.5rem;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.dark .u-cmd-search__divider {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}

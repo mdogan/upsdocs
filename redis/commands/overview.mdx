@@ -4,7 +4,11 @@ sidebarTitle: "Overview"
 description: "Browse the Redis commands supported by Upstash, organized by category."
 ---
 
-Upstash supports Redis commands over both native Redis TCP and HTTPS REST. Choose a category to browse its supported commands.
+import { CommandSearch } from "/redis/commands/command-search.jsx";
+
+Upstash supports Redis commands over both native Redis TCP and HTTPS REST. Choose a category to browse its supported commands, or search for a command below.
+
+<CommandSearch />
 
 <CardGroup cols={2}>
 <Card title="Bitmap" icon="grid" href="/redis/commands/bitmap/overview" horizontal>Manipulate individual bits and bit fields</Card>
